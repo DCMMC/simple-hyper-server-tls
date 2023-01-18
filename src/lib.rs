@@ -101,6 +101,7 @@ pub use openssl;
 pub use rustls;
 #[cfg(any(feature = "tls-rustls", feature = "tls-openssl"))]
 pub use tls_listener;
+use tls_listener::TlsListener;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 /// Defines protocols that will be used in TLS configuration.
